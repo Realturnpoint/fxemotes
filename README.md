@@ -1,6 +1,6 @@
-# FX Emotes — Stream Deck Plugin
+# Fivem Emotes — Stream Deck Plugin
 
-A Stream Deck plugin for triggering FiveM/RedM RP emotes via city-specific dropdown menus. Select your server, pick an emote, and play it with a single button press.
+A Stream Deck plugin for triggering FiveM/RedM emotes via city-specific dropdown menus. Select your server, pick an emote, and play it with a single button press.
 
 ## Features
 
@@ -48,7 +48,7 @@ npm install
 
 ## Usage
 
-1. Drag the **RP Emote** action onto your Stream Deck
+1. Drag the **Fivem emotes** action onto your Stream Deck
 2. In the settings panel:
    - **City** — pick your server (e.g. *Infinity RP*)
    - **Emote** — choose an emote from the grouped list

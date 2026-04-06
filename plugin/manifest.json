@@ -3,7 +3,7 @@
 	"Actions": [
 		{
 			"Icon": "imgs/icon",
-			"Name": "Roleplay emote",
+			"Name": "Fivem emotes",
 			"States": [
 				{
 					"Image": "imgs/action",
@@ -13,13 +13,13 @@
 			],
 			"SupportedInMultiActions": true,
 			"UUID": "com.turnpoint.fxemotes.emote",
-			"Tooltip": "Trigger an RP emote on your FiveM server with a single button press",
+			"Tooltip": "Trigger a FiveM emote on your server with a single button press",
 			"PropertyInspectorPath": "ui/EmoteActionPI.html",
 			"Controllers": ["Keypad"]
 		}
 	],
 	"Author": "Turnpoint",
-	"Name": "Roleplay emote",
+	"Name": "Fivem emotes",
 	"Description": "City-based emote picker for FiveM/RedM RP servers. Select your city, pick an emote, and trigger it from your Stream Deck.",
 	"Icon": "imgs/plugin-icon",
 	"URL": "https://github.com/Realturnpoint/fxemotes",
@@ -27,7 +27,7 @@
 	"Version": "1.0.0.1",
 	"CodePath": "bin/plugin.js",
 	"UUID": "com.turnpoint.fxemotes",
-	"Category": "Roleplay emote",
+	"Category": "Fivem emotes",
 	"CategoryIcon": "imgs/category-icon",
 	"OS": [
 		{

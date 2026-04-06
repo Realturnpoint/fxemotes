@@ -1,7 +1,7 @@
 {
 	"name": "fxemotes",
 	"version": "1.0.0",
-	"description": "Stream Deck plugin for triggering FiveM/RedM RP emotes via city-specific dropdown menus",
+	"description": "Stream Deck plugin for triggering FiveM/RedM emotes via city-specific dropdown menus",
 	"author": "Turnpoint",
 	"license": "MIT",
 	"type": "module",
