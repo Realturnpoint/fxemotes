@@ -57,6 +57,11 @@ jobs:
 
           $manifestPath = "$pluginDir/manifest.json"
           $manifest = Get-Content -Raw -Path $manifestPath | ConvertFrom-Json
+
+          if ($manifest.Version -ne $version) {
+            throw "Manifest version '$($manifest.Version)' must match release tag version '$version'. Update plugin/manifest.json before creating the release tag."
+          }
+
           $manifest.Version = $version
           $manifest | ConvertTo-Json -Depth 20 | Set-Content -Path $manifestPath -Encoding UTF8
 
