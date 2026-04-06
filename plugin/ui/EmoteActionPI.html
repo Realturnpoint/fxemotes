@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+		/>
+		<title>FX Emotes Settings</title>
+		<link rel="stylesheet" href="sdpi.css" />
+		<style>
+			.press-preview {
+				font-family: monospace;
+				background: rgba(0, 0, 0, 0.25);
+				border-radius: 4px;
+				padding: 3px 8px;
+				color: #9be09b;
+				font-size: 12px;
+				display: inline-block;
+				min-width: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sdpi-wrapper">
+
+			<!-- ── City selector ──────────────────────────────────────── -->
+			<div class="sdpi-heading">Server / City</div>
+			<div class="sdpi-item">
+				<div class="sdpi-item-label">City</div>
+				<select
+					class="sdpi-item-value select"
+					id="cityKey"
+					onchange="onCityChange()"
+				></select>
+			</div>
+
+			<!-- ── Emote selector ─────────────────────────────────────── -->
+			<div class="sdpi-heading">Emote</div>
+			<div class="sdpi-item">
+				<div class="sdpi-item-label">Emote</div>
+				<select
+					class="sdpi-item-value select"
+					id="emoteCommand"
+					onchange="onEmoteChange()"
+				></select>
+			</div>
+
+			<!-- ── On Press preview (read-only) ───────────────────────── -->
+			<div class="sdpi-item">
+				<div class="sdpi-item-label">On Press</div>
+				<div class="sdpi-item-value" style="padding-top:4px;">
+					<span id="pressPreview" class="press-preview">—</span>
+					<span style="font-size:10px; color:#888; margin-left:6px;">(auto)</span>
+				</div>
+			</div>
+
+			<!-- ── On Release command (configurable) ──────────────────── -->
+			<div class="sdpi-item">
+				<div class="sdpi-item-label">On Release</div>
+				<input
+					class="sdpi-item-value"
+					type="text"
+					id="commandReleased"
+					placeholder="e.g. e c"
+					oninput="saveSettings()"
+				/>
+			</div>
+
+			<!-- ── Optional button label ──────────────────────────────── -->
+			<details>
+				<summary>Advanced</summary>
+				<div class="sdpi-item">
+					<div class="sdpi-item-label">Button Label</div>
+					<input
+						class="sdpi-item-value"
+						type="text"
+						id="buttonLabel"
+						placeholder="Leave blank to use emote name"
+						oninput="saveSettings()"
+					/>
+				</div>
+			</details>
+
+		</div>
+		<script src="data/cities/infinity-rp.js"></script>
+		<script src="data/cities/eldorado.js"></script>
+		<script src="data/cities/index.js"></script>
+		<script src="EmoteActionPI.js"></script>
+	</body>
+</html>
